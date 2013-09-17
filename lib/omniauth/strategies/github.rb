@@ -29,12 +29,12 @@ module OmniAuth
       info do
         {
           'nick_name' => raw_info['login'],
-          'email'    => email,
-          'name'     => raw_info['name'],
-          'avatar'   => raw_info['avatar_url'],
-          'urls'     => {
+          'email'     => email,
+          'name'      => raw_info['name'],
+          'avatar'    => raw_info['avatar_url'],
+          'urls'      => {
             'github'    => "https://github.com/#{raw_info['login']}",
-            'home_page' => "https://github.com/#{raw_info['login']}",
+            'home'      => "https://github.com/#{raw_info['login']}",
             'blog'      => raw_info['blog'],
           }
         }
